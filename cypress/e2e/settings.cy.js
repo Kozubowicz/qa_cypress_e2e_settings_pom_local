@@ -43,7 +43,9 @@ describe('Settings page', () => {
     settingsPage.bioField.should('contain.text', newBio)
     settingsPage.emailField.should('have.value', user.email)
     settingsPage.emailField.clear()
+
     settingsPage.typeEmail(newEmail)
+
     settingsPage.emailField.should('have.value', newEmail)
     settingsPage.typePassword(newPassword)
     settingsPage.passwordField.should('have.value', newPassword)
